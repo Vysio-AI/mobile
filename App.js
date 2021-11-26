@@ -31,6 +31,8 @@ import MainScreen from './lib/screens/MainScreen';
 import LoginScreen from './lib/screens/LoginScreen';
 import ReferralScreen from './lib/screens/ReferralScreen';
 
+// import {io} from 'socket.io-client';
+
 const auth0 = new Auth0({
   domain: 'petermarshall.us.auth0.com',
   clientId: 'SnjygAyEh3ufh8uXz0gmRM2F6O79Lf2J',
@@ -38,16 +40,17 @@ const auth0 = new Auth0({
 
 const Stack = createNativeStackNavigator();
 
-// Create React context for storing auth/user data
-const initialContext = {
-  auth0: auth0,
-  userInfo: null,
-  accessToken: null,
-};
+// const socket = io('localhost:3000');
 
 const App = () => {
   const [userInfo, setUserInfo] = useState(null);
   const [accessToken, setAccessToken] = useState(null);
+
+  // useEffect(() => {
+  //   socket.on('connect', () => {
+  //     Alert.alert("Socket connected");
+  //   });
+  // });
 
   return (
     <AppContext.Provider value={{
