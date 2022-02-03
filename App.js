@@ -14,6 +14,7 @@ import {
   View,
   TouchableOpacity,
   Alert,
+  Platform,
 } from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
@@ -33,6 +34,30 @@ import ReferralScreen from './lib/screens/ReferralScreen';
 
 // import {io} from 'socket.io-client';
 
+// React-query setup
+import NetInfo from '@react-native-community/netinfo'
+import useAppState from 'react-native-appstate-hook'
+import {
+  onlineManager,
+  focusManager, 
+  QueryClient,
+  QueryClientProvider
+} from 'react-query'
+
+// Auto-refetch on reconnect
+onlineManager.setEventListener(setOnline => {
+  return NetInfo.addEventListener(state => {
+    setOnline(state.isConnected)
+  })
+})
+
+// Refetch on App Focus
+function onAppStateChange(status: AppStateStatus) {
+  if (Platform.OS !== 'web') {
+    focusManager.setFocused(status === 'active')
+  }
+}
+
 const auth0 = new Auth0({
   domain: 'petermarshall.us.auth0.com',
   clientId: 'SnjygAyEh3ufh8uXz0gmRM2F6O79Lf2J',
@@ -40,11 +65,17 @@ const auth0 = new Auth0({
 
 const Stack = createNativeStackNavigator();
 
+const queryClient = new QueryClient();
+
 // const socket = io('localhost:3000');
 
 const App = () => {
   const [userInfo, setUserInfo] = useState(null);
   const [accessToken, setAccessToken] = useState(null);
+
+  useAppState({
+    onChange: onAppStateChange
+  })
 
   // useEffect(() => {
   //   socket.on('connect', () => {
@@ -60,13 +91,19 @@ const App = () => {
       accessToken: accessToken,
       setAccessToken: setAccessToken,
     }}>
-      <NavigationContainer>
-        <Stack.Navigator>
-          <Stack.Screen name="Login" component={LoginScreen} />
-          <Stack.Screen name="Referral" component={ReferralScreen} />
-          <Stack.Screen name="Main" component={MainScreen} />
-        </Stack.Navigator>
-      </NavigationContainer>
+      <QueryClientProvider client={queryClient}>
+        <NavigationContainer>
+          <Stack.Navigator
+            screenOptions={{
+              headerShown: false
+            }}
+          >
+            <Stack.Screen name="Login" component={LoginScreen} />
+            <Stack.Screen name="Referral" component={ReferralScreen} />
+            <Stack.Screen name="Main" component={MainScreen} />
+          </Stack.Navigator>
+        </NavigationContainer>
+      </QueryClientProvider>
     </AppContext.Provider>
   );
 };
