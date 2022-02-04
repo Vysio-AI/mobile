@@ -31,6 +31,7 @@ import AppContext from './lib/AppContext';
 import MainScreen from './lib/screens/MainScreen';
 import LoginScreen from './lib/screens/LoginScreen';
 import ReferralScreen from './lib/screens/ReferralScreen';
+import SessionScreen from './lib/screens/SessionRunningScreen';
 
 // import {io} from 'socket.io-client';
 
