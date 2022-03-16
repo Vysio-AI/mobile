@@ -35,6 +35,9 @@ import SessionScreen from './lib/screens/SessionRunningScreen';
 
 // import {io} from 'socket.io-client';
 
+// BLE Setup
+import { BleManager } from 'react-native-ble-plx'
+
 // React-query setup
 import NetInfo from '@react-native-community/netinfo'
 import useAppState from 'react-native-appstate-hook'
@@ -68,6 +71,8 @@ const Stack = createNativeStackNavigator();
 
 const queryClient = new QueryClient();
 
+const manager = new BleManager();
+
 // const socket = io('localhost:3000');
 
 const App = () => {
@@ -91,6 +96,7 @@ const App = () => {
       setUserInfo: setUserInfo,
       accessToken: accessToken,
       setAccessToken: setAccessToken,
+      BleManager: manager,
     }}>
       <QueryClientProvider client={queryClient}>
         <NavigationContainer>

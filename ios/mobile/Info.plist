@@ -91,5 +91,7 @@
 	<string>Your message to user when the photo library is accessed for the first time</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Your message to user when the microphone is accessed for the first time</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Vysio needs to use bluetooth to connect your weable device.</string>
 </dict>
 </plist>
