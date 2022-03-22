@@ -33,7 +33,7 @@ import LoginScreen from './lib/screens/LoginScreen';
 import ReferralScreen from './lib/screens/ReferralScreen';
 import SessionScreen from './lib/screens/SessionRunningScreen';
 
-// import {io} from 'socket.io-client';
+import {io} from 'socket.io-client';
 
 // BLE Setup
 import { BleManager } from 'react-native-ble-plx'
@@ -73,21 +73,23 @@ const queryClient = new QueryClient();
 
 const manager = new BleManager();
 
-// const socket = io('localhost:3000');
+const socket = io('https://api.vysio.ca');
 
 const App = () => {
   const [userInfo, setUserInfo] = useState(null);
   const [accessToken, setAccessToken] = useState(null);
+  const [deviceUUID, setDeviceUUID] = useState(null);
+  const [serviceUUID, setServiceUUID] = useState(null);
 
   useAppState({
     onChange: onAppStateChange
   })
 
-  // useEffect(() => {
-  //   socket.on('connect', () => {
-  //     Alert.alert("Socket connected");
-  //   });
-  // });
+  useEffect(() => {
+    socket.on('connect', () => {
+      console.log("Socket connected");
+    });
+  }, []);
 
   return (
     <AppContext.Provider value={{
@@ -97,6 +99,11 @@ const App = () => {
       accessToken: accessToken,
       setAccessToken: setAccessToken,
       BleManager: manager,
+      deviceUUID: deviceUUID,
+      setDeviceUUID: setDeviceUUID,
+      serviceUUID: serviceUUID,
+      setServiceUUID: setServiceUUID,
+      socket: socket
     }}>
       <QueryClientProvider client={queryClient}>
         <NavigationContainer>
