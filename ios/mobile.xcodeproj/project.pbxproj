@@ -13,18 +13,6 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		1EA9E16B48A13B1CBC000713 /* libPods-mobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FB2CEC2C1710036D9E5116 /* libPods-mobile.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		87E1BC8D2718CBFE00D6A250 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87E1BC8B2718CBFE00D6A250 /* Interface.storyboard */; };
-		87E1BC8F2718CC0000D6A250 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87E1BC8E2718CC0000D6A250 /* Assets.xcassets */; };
-		87E1BC952718CC0000D6A250 /* vysio-watchos WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 87E1BC942718CC0000D6A250 /* vysio-watchos WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		87E1BC9A2718CC0000D6A250 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E1BC992718CC0000D6A250 /* InterfaceController.swift */; };
-		87E1BC9C2718CC0000D6A250 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E1BC9B2718CC0000D6A250 /* ExtensionDelegate.swift */; };
-		87E1BC9E2718CC0100D6A250 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E1BC9D2718CC0100D6A250 /* NotificationController.swift */; };
-		87E1BCA02718CC0100D6A250 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E1BC9F2718CC0100D6A250 /* ComplicationController.swift */; };
-		87E1BCA22718CC0200D6A250 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87E1BCA12718CC0200D6A250 /* Assets.xcassets */; };
-		87E1BCAE2718CC0200D6A250 /* vysio_watchosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E1BCAD2718CC0200D6A250 /* vysio_watchosTests.swift */; };
-		87E1BCB82718CC0200D6A250 /* vysio_watchosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E1BCB72718CC0200D6A250 /* vysio_watchosUITests.swift */; };
-		87E1BCBA2718CC0200D6A250 /* vysio_watchosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E1BCB92718CC0200D6A250 /* vysio_watchosUITestsLaunchTests.swift */; };
-		87E1BCBD2718CC0200D6A250 /* vysio-watchos.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 87E1BC892718CBFE00D6A250 /* vysio-watchos.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AF2BE30B020E27A91389F3C1 /* libPods-mobile-mobileTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD609827188286EDDC47A24 /* libPods-mobile-mobileTests.a */; };
 /* End PBXBuildFile section */
 
@@ -36,60 +24,7 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = mobile;
 		};
-		87E1BC962718CC0000D6A250 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 87E1BC932718CC0000D6A250;
-			remoteInfo = "vysio-watchos WatchKit Extension";
-		};
-		87E1BCAA2718CC0200D6A250 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 87E1BC932718CC0000D6A250;
-			remoteInfo = "vysio-watchos WatchKit Extension";
-		};
-		87E1BCB42718CC0200D6A250 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 87E1BC882718CBFE00D6A250;
-			remoteInfo = "vysio-watchos";
-		};
-		87E1BCBB2718CC0200D6A250 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 87E1BC882718CBFE00D6A250;
-			remoteInfo = "vysio-watchos";
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		87E1BB8F2718818B00D6A250 /* Embed Watch Content */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
-			dstSubfolderSpec = 16;
-			files = (
-				87E1BCBD2718CC0200D6A250 /* vysio-watchos.app in Embed Watch Content */,
-			);
-			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		87E1BCC12718CC0200D6A250 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				87E1BC952718CC0000D6A250 /* vysio-watchos WatchKit Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* mobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,22 +47,6 @@
 		76C7159B784947E398E8E136 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		7ACCBB3D67EA4751B6807944 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = mobile/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		87E1BC892718CBFE00D6A250 /* vysio-watchos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vysio-watchos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		87E1BC8C2718CBFE00D6A250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		87E1BC8E2718CC0000D6A250 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		87E1BC942718CC0000D6A250 /* vysio-watchos WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "vysio-watchos WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		87E1BC992718CC0000D6A250 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		87E1BC9B2718CC0000D6A250 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		87E1BC9D2718CC0100D6A250 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		87E1BC9F2718CC0100D6A250 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
-		87E1BCA12718CC0200D6A250 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		87E1BCA32718CC0200D6A250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87E1BCA42718CC0200D6A250 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		87E1BCA92718CC0200D6A250 /* vysio-watchosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vysio-watchosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		87E1BCAD2718CC0200D6A250 /* vysio_watchosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vysio_watchosTests.swift; sourceTree = "<group>"; };
-		87E1BCB32718CC0200D6A250 /* vysio-watchosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vysio-watchosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		87E1BCB72718CC0200D6A250 /* vysio_watchosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vysio_watchosUITests.swift; sourceTree = "<group>"; };
-		87E1BCB92718CC0200D6A250 /* vysio_watchosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vysio_watchosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		943409964CAB4F0BB40BF20B /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		9A0A68FF7A6D4477B9121B7C /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		A1EC9EBDAF72364B87DCB761 /* Pods-mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile.release.xcconfig"; path = "Target Support Files/Pods-mobile/Pods-mobile.release.xcconfig"; sourceTree = "<group>"; };
@@ -157,27 +76,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EA9E16B48A13B1CBC000713 /* libPods-mobile.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		87E1BC912718CC0000D6A250 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		87E1BCA62718CC0200D6A250 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		87E1BCB02718CC0200D6A250 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,10 +146,6 @@
 				13B07FAE1A68108700A75B9A /* mobile */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* mobileTests */,
-				87E1BC8A2718CBFE00D6A250 /* vysio-watchos */,
-				87E1BC982718CC0000D6A250 /* vysio-watchos WatchKit Extension */,
-				87E1BCAC2718CC0200D6A250 /* vysio-watchosTests */,
-				87E1BCB62718CC0200D6A250 /* vysio-watchosUITests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				5ED68DA3A42CB465B501AB63 /* Pods */,
@@ -267,52 +161,8 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* mobile.app */,
 				00E356EE1AD99517003FC87E /* mobileTests.xctest */,
-				87E1BC892718CBFE00D6A250 /* vysio-watchos.app */,
-				87E1BC942718CC0000D6A250 /* vysio-watchos WatchKit Extension.appex */,
-				87E1BCA92718CC0200D6A250 /* vysio-watchosTests.xctest */,
-				87E1BCB32718CC0200D6A250 /* vysio-watchosUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		87E1BC8A2718CBFE00D6A250 /* vysio-watchos */ = {
-			isa = PBXGroup;
-			children = (
-				87E1BC8B2718CBFE00D6A250 /* Interface.storyboard */,
-				87E1BC8E2718CC0000D6A250 /* Assets.xcassets */,
-			);
-			path = "vysio-watchos";
-			sourceTree = "<group>";
-		};
-		87E1BC982718CC0000D6A250 /* vysio-watchos WatchKit Extension */ = {
-			isa = PBXGroup;
-			children = (
-				87E1BC992718CC0000D6A250 /* InterfaceController.swift */,
-				87E1BC9B2718CC0000D6A250 /* ExtensionDelegate.swift */,
-				87E1BC9D2718CC0100D6A250 /* NotificationController.swift */,
-				87E1BC9F2718CC0100D6A250 /* ComplicationController.swift */,
-				87E1BCA12718CC0200D6A250 /* Assets.xcassets */,
-				87E1BCA32718CC0200D6A250 /* Info.plist */,
-				87E1BCA42718CC0200D6A250 /* PushNotificationPayload.apns */,
-			);
-			path = "vysio-watchos WatchKit Extension";
-			sourceTree = "<group>";
-		};
-		87E1BCAC2718CC0200D6A250 /* vysio-watchosTests */ = {
-			isa = PBXGroup;
-			children = (
-				87E1BCAD2718CC0200D6A250 /* vysio_watchosTests.swift */,
-			);
-			path = "vysio-watchosTests";
-			sourceTree = "<group>";
-		};
-		87E1BCB62718CC0200D6A250 /* vysio-watchosUITests */ = {
-			isa = PBXGroup;
-			children = (
-				87E1BCB72718CC0200D6A250 /* vysio_watchosUITests.swift */,
-				87E1BCB92718CC0200D6A250 /* vysio_watchosUITestsLaunchTests.swift */,
-			);
-			path = "vysio-watchosUITests";
 			sourceTree = "<group>";
 		};
 		CA6B5CF1FEDE4F23891E9FA7 /* Resources */ = {
@@ -372,89 +222,17 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				87E1BB8F2718818B00D6A250 /* Embed Watch Content */,
 				084E57B17FC613D916E6E3CF /* [CP] Embed Pods Frameworks */,
 				90149AFE90C1C13CFADDC453 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				87E1BCBC2718CC0200D6A250 /* PBXTargetDependency */,
 			);
 			name = mobile;
 			productName = mobile;
 			productReference = 13B07F961A680F5B00A75B9A /* mobile.app */;
 			productType = "com.apple.product-type.application";
-		};
-		87E1BC882718CBFE00D6A250 /* vysio-watchos */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 87E1BCC22718CC0200D6A250 /* Build configuration list for PBXNativeTarget "vysio-watchos" */;
-			buildPhases = (
-				87E1BC872718CBFE00D6A250 /* Resources */,
-				87E1BCC12718CC0200D6A250 /* Embed App Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				87E1BC972718CC0000D6A250 /* PBXTargetDependency */,
-			);
-			name = "vysio-watchos";
-			productName = "vysio-watchos";
-			productReference = 87E1BC892718CBFE00D6A250 /* vysio-watchos.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		87E1BC932718CC0000D6A250 /* vysio-watchos WatchKit Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 87E1BCBE2718CC0200D6A250 /* Build configuration list for PBXNativeTarget "vysio-watchos WatchKit Extension" */;
-			buildPhases = (
-				87E1BC902718CC0000D6A250 /* Sources */,
-				87E1BC912718CC0000D6A250 /* Frameworks */,
-				87E1BC922718CC0000D6A250 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "vysio-watchos WatchKit Extension";
-			productName = "vysio-watchos WatchKit Extension";
-			productReference = 87E1BC942718CC0000D6A250 /* vysio-watchos WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
-		};
-		87E1BCA82718CC0200D6A250 /* vysio-watchosTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 87E1BCC52718CC0200D6A250 /* Build configuration list for PBXNativeTarget "vysio-watchosTests" */;
-			buildPhases = (
-				87E1BCA52718CC0200D6A250 /* Sources */,
-				87E1BCA62718CC0200D6A250 /* Frameworks */,
-				87E1BCA72718CC0200D6A250 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				87E1BCAB2718CC0200D6A250 /* PBXTargetDependency */,
-			);
-			name = "vysio-watchosTests";
-			productName = "vysio-watchosTests";
-			productReference = 87E1BCA92718CC0200D6A250 /* vysio-watchosTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		87E1BCB22718CC0200D6A250 /* vysio-watchosUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 87E1BCC82718CC0200D6A250 /* Build configuration list for PBXNativeTarget "vysio-watchosUITests" */;
-			buildPhases = (
-				87E1BCAF2718CC0200D6A250 /* Sources */,
-				87E1BCB02718CC0200D6A250 /* Frameworks */,
-				87E1BCB12718CC0200D6A250 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				87E1BCB52718CC0200D6A250 /* PBXTargetDependency */,
-			);
-			name = "vysio-watchosUITests";
-			productName = "vysio-watchosUITests";
-			productReference = 87E1BCB32718CC0200D6A250 /* vysio-watchosUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -471,20 +249,6 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1120;
-					};
-					87E1BC882718CBFE00D6A250 = {
-						CreatedOnToolsVersion = 13.0;
-					};
-					87E1BC932718CC0000D6A250 = {
-						CreatedOnToolsVersion = 13.0;
-					};
-					87E1BCA82718CC0200D6A250 = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = 87E1BC932718CC0000D6A250;
-					};
-					87E1BCB22718CC0200D6A250 = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = 87E1BC882718CBFE00D6A250;
 					};
 				};
 			};
@@ -503,10 +267,6 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* mobile */,
 				00E356ED1AD99517003FC87E /* mobileTests */,
-				87E1BC882718CBFE00D6A250 /* vysio-watchos */,
-				87E1BC932718CC0000D6A250 /* vysio-watchos WatchKit Extension */,
-				87E1BCA82718CC0200D6A250 /* vysio-watchosTests */,
-				87E1BCB22718CC0200D6A250 /* vysio-watchosUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -525,37 +285,6 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		87E1BC872718CBFE00D6A250 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				87E1BC8F2718CC0000D6A250 /* Assets.xcassets in Resources */,
-				87E1BC8D2718CBFE00D6A250 /* Interface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		87E1BC922718CC0000D6A250 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				87E1BCA22718CC0200D6A250 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		87E1BCA72718CC0200D6A250 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		87E1BCB12718CC0200D6A250 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,34 +456,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		87E1BC902718CC0000D6A250 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				87E1BC9E2718CC0100D6A250 /* NotificationController.swift in Sources */,
-				87E1BCA02718CC0100D6A250 /* ComplicationController.swift in Sources */,
-				87E1BC9C2718CC0000D6A250 /* ExtensionDelegate.swift in Sources */,
-				87E1BC9A2718CC0000D6A250 /* InterfaceController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		87E1BCA52718CC0200D6A250 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				87E1BCAE2718CC0200D6A250 /* vysio_watchosTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		87E1BCAF2718CC0200D6A250 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				87E1BCB82718CC0200D6A250 /* vysio_watchosUITests.swift in Sources */,
-				87E1BCBA2718CC0200D6A250 /* vysio_watchosUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -763,38 +464,7 @@
 			target = 13B07F861A680F5B00A75B9A /* mobile */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
-		87E1BC972718CC0000D6A250 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 87E1BC932718CC0000D6A250 /* vysio-watchos WatchKit Extension */;
-			targetProxy = 87E1BC962718CC0000D6A250 /* PBXContainerItemProxy */;
-		};
-		87E1BCAB2718CC0200D6A250 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 87E1BC932718CC0000D6A250 /* vysio-watchos WatchKit Extension */;
-			targetProxy = 87E1BCAA2718CC0200D6A250 /* PBXContainerItemProxy */;
-		};
-		87E1BCB52718CC0200D6A250 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 87E1BC882718CBFE00D6A250 /* vysio-watchos */;
-			targetProxy = 87E1BCB42718CC0200D6A250 /* PBXContainerItemProxy */;
-		};
-		87E1BCBC2718CC0200D6A250 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 87E1BC882718CBFE00D6A250 /* vysio-watchos */;
-			targetProxy = 87E1BCBB2718CC0200D6A250 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		87E1BC8B2718CBFE00D6A250 /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				87E1BC8C2718CBFE00D6A250 /* Base */,
-			);
-			name = Interface.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
@@ -860,6 +530,7 @@
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = mobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -886,6 +557,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = mobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1032,306 +704,6 @@
 			};
 			name = Release;
 		};
-		87E1BCBF2718CC0200D6A250 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "vysio-watchos WatchKit Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "vysio-watchos WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = vysio_watchos_WatchKit_Extension.ComplicationController;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_WKExtensionDelegateClassName = vysio_watchos_WatchKit_Extension.ExtensionDelegate;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.petermarshall.vysio.mobile.watch.extension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.0;
-			};
-			name = Debug;
-		};
-		87E1BCC02718CC0200D6A250 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "vysio-watchos WatchKit Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "vysio-watchos WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = vysio_watchos_WatchKit_Extension.ComplicationController;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_WKExtensionDelegateClassName = vysio_watchos_WatchKit_Extension.ExtensionDelegate;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.petermarshall.vysio.mobile.watch.extension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.0;
-			};
-			name = Release;
-		};
-		87E1BCC32718CC0200D6A250 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GENERATE_INFOPLIST_FILE = YES;
-				IBSC_MODULE = vysio_watchos_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "vysio-watchos";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = dev.petermarshall.vysio.mobile;
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.petermarshall.vysio.mobile.watch;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.0;
-			};
-			name = Debug;
-		};
-		87E1BCC42718CC0200D6A250 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GENERATE_INFOPLIST_FILE = YES;
-				IBSC_MODULE = vysio_watchos_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "vysio-watchos";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = dev.petermarshall.vysio.mobile;
-				MARKETING_VERSION = 1.0;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.petermarshall.vysio.mobile.watch;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.0;
-			};
-			name = Release;
-		};
-		87E1BCC62718CC0200D6A250 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.mobile.vysio-watchosTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vysio-watchos WatchKit Extension.appex/vysio-watchos WatchKit Extension";
-				WATCHOS_DEPLOYMENT_TARGET = 8.0;
-			};
-			name = Debug;
-		};
-		87E1BCC72718CC0200D6A250 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.mobile.vysio-watchosTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vysio-watchos WatchKit Extension.appex/vysio-watchos WatchKit Extension";
-				WATCHOS_DEPLOYMENT_TARGET = 8.0;
-			};
-			name = Release;
-		};
-		87E1BCC92718CC0200D6A250 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.mobile.vysio-watchosUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_TARGET_NAME = "vysio-watchos";
-				WATCHOS_DEPLOYMENT_TARGET = 8.0;
-			};
-			name = Debug;
-		};
-		87E1BCCA2718CC0200D6A250 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.mobile.vysio-watchosUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_TARGET_NAME = "vysio-watchos";
-				WATCHOS_DEPLOYMENT_TARGET = 8.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1358,42 +730,6 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		87E1BCBE2718CC0200D6A250 /* Build configuration list for PBXNativeTarget "vysio-watchos WatchKit Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				87E1BCBF2718CC0200D6A250 /* Debug */,
-				87E1BCC02718CC0200D6A250 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		87E1BCC22718CC0200D6A250 /* Build configuration list for PBXNativeTarget "vysio-watchos" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				87E1BCC32718CC0200D6A250 /* Debug */,
-				87E1BCC42718CC0200D6A250 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		87E1BCC52718CC0200D6A250 /* Build configuration list for PBXNativeTarget "vysio-watchosTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				87E1BCC62718CC0200D6A250 /* Debug */,
-				87E1BCC72718CC0200D6A250 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		87E1BCC82718CC0200D6A250 /* Build configuration list for PBXNativeTarget "vysio-watchosUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				87E1BCC92718CC0200D6A250 /* Debug */,
-				87E1BCCA2718CC0200D6A250 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

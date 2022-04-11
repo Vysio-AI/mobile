@@ -1,46 +1,55 @@
 {
   "images" : [
     {
+      "filename" : "rsz_1rsz_5rsz_1rsz_1rsz_1group_48.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
+      "filename" : "rsz_1rsz_1rsz_1rsz_1rsz_1rsz_1group_48.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
     },
     {
+      "filename" : "rsz_5rsz_1rsz_1rsz_1group_48.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
+      "filename" : "rsz_1rsz_1rsz_1rsz_1group_48.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
+      "filename" : "rsz_1rsz_1rsz_1rsz_1rsz_1group_48.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
+      "filename" : "rsz_1rsz_1rsz_1group_48-1.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "40x40"
     },
     {
+      "filename" : "rsz_1rsz_1rsz_1group_48.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
+      "filename" : "rsz_1rsz_1group_48.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
     },
     {
+      "filename" : "rsz_1group_48.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"

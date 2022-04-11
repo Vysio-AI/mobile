@@ -8,21 +8,12 @@
 
 import React, {useState, useEffect} from 'react';
 import {
-  SafeAreaView,
-  Text,
-  Button,
-  View,
-  TouchableOpacity,
-  Alert,
   Platform,
 } from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import tailwind from 'tailwind-rn';
-import DeviceInfo from 'react-native-device-info';
 import Auth0 from 'react-native-auth0';
-import Config from 'react-native-config';
 
 // Import context
 import AppContext from './lib/AppContext';
